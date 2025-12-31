@@ -1,11 +1,11 @@
 {
     "version": "0.1.0",
     "description": "Skills Supply CLI - Install and manage AI agent skills",
-    "homepage": "https://github.com/803/skillssupply",
+    "homepage": "https://github.com/803/skills-supply",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/803/skillssupply/releases/download/sk@0.1.0/sk-windows-x64.zip",
+            "url": "https://github.com/803/skills-supply/releases/download/sk@0.1.0/sk-windows-x64.zip",
             "hash": "PLACEHOLDER"
         }
     },
@@ -14,7 +14,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/803/skillssupply/releases/download/sk@$version/sk-windows-x64.zip"
+                "url": "https://github.com/803/skills-supply/releases/download/sk@$version/sk-windows-x64.zip"
             }
         },
         "hash": {

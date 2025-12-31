@@ -6,7 +6,7 @@ if (!version) {
   process.exit(1);
 }
 
-const REPO = "skills-supply/skillssupply";
+const REPO = "803/skillssupply";
 const MANIFEST_PATH = "bucket/sk.json";
 
 // Fetch SHASUMS256.txt and parse Windows hash

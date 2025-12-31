@@ -1,11 +1,11 @@
 # Scoop Bucket for sk
 
-Scoop bucket for installing [sk](https://github.com/skills-supply/skillssupply) - the Skills Supply CLI.
+Scoop bucket for installing [sk](https://github.com/803/skillssupply) - the Skills Supply CLI.
 
 ## Installation
 
 ```powershell
-scoop bucket add skills-supply https://github.com/skills-supply/scoop-sk
+scoop bucket add 803 https://github.com/803/scoop-sk
 scoop install sk
 ```
 
@@ -23,4 +23,4 @@ scoop uninstall sk
 
 ## About sk
 
-sk is a CLI for installing and managing AI agent skills. For more information, see the [main repository](https://github.com/skills-supply/skillssupply).
+sk is a CLI for installing and managing AI agent skills. For more information, see the [main repository](https://github.com/803/skillssupply).

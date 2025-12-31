@@ -1,8 +1,8 @@
 #!/usr/bin/env bun
 
-const version = process.argv[2]?.replace(/^v/, "");
+const version = process.argv[2]?.replace(/^sk@/, "");
 if (!version) {
-  console.error("Usage: bun update-manifest.ts <version>");
+  console.error("Usage: bun update-manifest.ts <tag>  (e.g., sk@0.1.0)");
   process.exit(1);
 }
 
@@ -10,7 +10,7 @@ const REPO = "803/skillssupply";
 const MANIFEST_PATH = "bucket/sk.json";
 
 // Fetch SHASUMS256.txt and parse Windows hash
-const shasumsUrl = `https://github.com/${REPO}/releases/download/v${version}/SHASUMS256.txt`;
+const shasumsUrl = `https://github.com/${REPO}/releases/download/sk@${version}/SHASUMS256.txt`;
 const response = await fetch(shasumsUrl);
 if (!response.ok) {
   console.error(`Failed to fetch ${shasumsUrl}: ${response.status}`);
@@ -40,8 +40,8 @@ console.log(`\nWindows x64 hash: ${windowsHash}`);
 const manifest = JSON.parse(await Bun.file(MANIFEST_PATH).text());
 manifest.version = version;
 manifest.architecture["64bit"].url =
-  `https://github.com/${REPO}/releases/download/v${version}/sk-windows-x64.zip`;
+  `https://github.com/${REPO}/releases/download/sk@${version}/sk-windows-x64.zip`;
 manifest.architecture["64bit"].hash = windowsHash;
 
 await Bun.write(MANIFEST_PATH, JSON.stringify(manifest, null, 4));
-console.log(`\nUpdated ${MANIFEST_PATH} to v${version}`);
+console.log(`\nUpdated ${MANIFEST_PATH} to sk@${version}`);

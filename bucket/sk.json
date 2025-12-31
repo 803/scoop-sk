@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/803/skillssupply/releases/download/v0.1.0/sk-windows-x64.zip",
+            "url": "https://github.com/803/skillssupply/releases/download/sk@0.1.0/sk-windows-x64.zip",
             "hash": "PLACEHOLDER"
         }
     },
@@ -14,7 +14,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/803/skillssupply/releases/download/v$version/sk-windows-x64.zip"
+                "url": "https://github.com/803/skillssupply/releases/download/sk@$version/sk-windows-x64.zip"
             }
         },
         "hash": {

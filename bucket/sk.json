@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/803/skills-supply/releases/download/sk@0.2.2/sk-windows-x64.zip",
-            "hash": "7dc683034f2fc91c1b46d3edb4bd4b4fe1ce4b3c7ce76c5eb12a79e409fe6af5"
+            "hash": "b1f6db1aa17392302a1a978f0645275e5c5c570f23d3f79ac40fd0bbbd973748"
         }
     },
     "bin": "sk.exe",
